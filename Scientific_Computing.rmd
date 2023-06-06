@@ -1,8 +1,8 @@
 ---
 title: Spatiotemporal Exposures and Toxicology Group
 subtitle: Scientific Computing Support at NIEHS
-author: NIH>NIEHS>DTT>PTB>SET
-date: May 30, 2023
+author: Kyle P Messier
+date:  "`r Sys.Date()`"
 output:
   html_document:
     toc: true
