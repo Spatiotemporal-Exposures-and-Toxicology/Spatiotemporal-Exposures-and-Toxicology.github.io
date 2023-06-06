@@ -1,0 +1,31 @@
+---
+title: Spatiotemporal Exposures and Toxicology Group
+subtitle: Writing Style Guide
+author: Kyle P Messier
+date:  "`r Sys.Date()`"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    code_folding: show
+    df_print: kable
+    toc_depth: 2
+    always_allow_html: yes
+  pdf_document:
+    toc: yes=
+    toc_depth: '2'    
+---
+
+## Writing Style
+
+The writing style should be clear, concise, and accessible to a wide audience. Use plain language and avoid unnecessary jargon. Here are some guidelines to follow:
+
+1. Use active voice: Active voice makes the writing more engaging and easier to understand.
+
+2. Keep sentences and paragraphs short: Long sentences and paragraphs can make the text dense and difficult to read. Break them up for better readability.
+
+3. Define acronyms and abbreviations: Spell out acronyms and abbreviations when first mentioned, followed by the acronym or abbreviation in parentheses. Thereafter, use the acronym or abbreviation.
+
+4. Be consistent with terminology: Use consistent terminology throughout your work. Avoid using different terms to refer to the same concept.
+
+5. Use proper citations: Cite all references accurately and consistently using a standard citation style (e.g., APA, MLA). Include a reference list at the end of your work.

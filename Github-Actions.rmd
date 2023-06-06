@@ -1,0 +1,103 @@
+---
+title: Spatiotemporal Exposures and Toxicology Group
+subtitle: Automatic Push with Github Actions and Secret Keys
+author: NIH>NIEHS>DTT>PTB>SET
+date: May 30, 2023
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    code_folding: show
+    df_print: kable
+    toc_depth: 2
+    always_allow_html: yes
+  pdf_document:
+    toc: yes=
+    toc_depth: '2'    
+---
+
+
+To make the integration with GitHub automatic and more secure using secret keys, you can utilize GitHub Actions. GitHub Actions is a powerful automation and workflow feature provided by GitHub. Here's how you can set it up:
+
+1. Navigate to your GitHub repository on the GitHub website.
+2. In the root of your repository, create a new directory named `.github`.
+3. Inside the `.github` directory, create another directory named `workflows`.
+4. In the `workflows` directory, create a new file with a `.yml` extension (e.g., `main.yml`). This file will define the workflow for your GitHub Action.
+5. Open the `main.yml` file and define your workflow using the following code as an example:
+
+```yaml
+name: Automatic Push
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Push to remote
+      run: |
+        git config user.name "Your GitHub Username"
+        git config user.email "Your GitHub Email"
+        git remote add target <remote-url>
+        git push target ${{ secrets.ACCESS_TOKEN }} --force
+```
+
+In this example workflow, the `on.push` event triggers the workflow whenever a push is made to the `main` branch. The job is set to run on the latest Ubuntu environment. The steps consist of checking out the code and configuring Git with your username and email.
+
+The last step, `Push to remote`, adds the remote repository and pushes the code using the provided access token stored in the `secrets.ACCESS_TOKEN` variable. Note that the `--force` flag is used to ensure the push is successful, but exercise caution when using it.
+
+6. Before proceeding, you need to add the access token as a secret in your repository:
+   - Go to your repository on GitHub and navigate to the "Settings" tab.
+   - In the left sidebar, click on "Secrets."
+   - Click on "New repository secret" and provide a name (e.g., `ACCESS_TOKEN`) and paste the token value you generated earlier.
+   - Save the secret.
+
+7. Once you've created the workflow file and added the secret, commit and push the changes to your repository. The GitHub Action will be triggered automatically whenever a push event occurs on the `main` branch.
+
+The code provided in the workflow example can be customized further to suit your specific needs. You can modify the branch filter, add more steps, or incorporate additional actions as required.
+
+With these steps, you've successfully set up an automatic GitHub integration using secret keys and GitHub Actions.
+
+## Example from SET Group:
+
+```yaml
+
+
+name: Automatic Push
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash -l {0}
+
+    steps:
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '16'
+        
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Push to remote
+      run: |
+        git config user.name Spatiotemporal-Exposures-and-Toxicology
+        git config user.email kyle.messier@nih.gov
+        git remote add target https://github.com/Spatiotemporal-Exposures-and-Toxicology/Spatiotemporal-Exposures-and-Toxicology.github.io.git
+        git push target ${{ secrets.AUTO_PUSH }} --force
+
+```

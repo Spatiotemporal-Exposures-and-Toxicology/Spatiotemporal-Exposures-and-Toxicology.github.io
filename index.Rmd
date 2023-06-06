@@ -1,0 +1,187 @@
+---
+title: Spatiotemporal Exposures and Toxicology Group
+subtitle: Style and Reproducible Research Guide
+author: Kyle P Messier
+date: "`r Sys.Date()`"
+documentclass: book
+biblio-style: apalike
+link-citations: yes
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    code_folding: show
+    df_print: kable
+    toc_depth: 2
+    always_allow_html: yes
+  pdf_document:
+    toc: yes=
+    toc_depth: '2'    
+---
+
+
+
+
+## Testing 
+[Scientific-Computing](Scientific_Computing.html)
+
+
+## {SET}$_{group}$ logo
+
+
+NIH>NIEHS>DTT>PTB>SET
+
+The Spatiotemporal Exposures and Toxicology group also known as the SET group or SET. The acronym is also a nod to the mathematical set theory, so we can use the brackets {SET}. 
+
+The following are all acceptable version of the SET name for publications and presentations:
+
+1) Spatiotemporal Exposures and Toxicology Group 
+2) {Spatiotemporal Exposures and Toxicology}
+3) SET group 
+4) {SET}$_{group}$  Note group is underscore 
+5) {SET}
+
+## Reproducible File Structure 
+
+
+We will utilize a strict file structure for all projects. This will ensure that the code and data from the project is accessible and reproducible in the long term. In short, we will utilize a relative path file setup with a few strictly define folder names. After that, there is more flexibility, but this will ensure consistently and reproducibility. 
+
+* **Project Name Root Folder** - 
+  If working in R and Rstudio, you can create an Rproject, which will add a .Rproj here
+    + **Code** - location for all scripts - can add subfolders as needed
+    +  **Input** - this is where data that comes into the project, either in raw form or processed goes 
+    +  **Output** - this is where analysis or workflow intermediates and summary data goes - Can created subfolders as needed such as: 
+        - **Tables**
+        - **Figures**
+    + **Manuscript** - to contain all materials directly related to the submission of the manuscript.
+
+**Important**: The entirety of a project, including all data and code, are to live in the Project folder on the SET 
+    
+## Relative Paths 
+
+With the basic file structure established for the project, we can utilize relative paths. Relative paths will ensure our code will run on any computer or any system. 
+If we use an Rmarkdown file, we can specify in the Global Options for Rmarkdown files to be evaluated from project directory (i.e. where the .Rproj resides). 
+If we are not using an R project (or something similar for Python, etc.) or are using basic R (e.g. on a Linux), then we may need to specify the working directory as the project/root folder. If 
+you know an approach that works for things outside Rstudio, please let me know.
+
+
+Here is an R example below. Assume the following file structure:
+
+ * SET_Project is the root
+ * Code, Input, Output, and Manuscript are all in SET_Project
+ * Helper functions and Analysis are in Code
+
+
+```{r Relative Path Example in Rstudio, eval=FALSE}
+
+# This is an example of a relative path in Rstudio
+
+# If we are using an Rproject, this is where the .Rproj file is located
+
+data <- read.csv("Input/data.csv")
+
+# source a helper function
+source("Code/Helper_Functions.R")
+
+mdl <- my_helper_function(data)
+
+# save the model
+
+save(mdl, "Output/mdl.RData")
+
+# source an analysis script
+source("Code/Analysis/Analysis_Script.R")
+```
+
+If we are not using an Rproject, we can specify the working directory as the root folder. 
+
+```{r Relative Path with Root Specified, eval=FALSE}
+
+setwd("SET_Project")
+
+data <- read.csv("Input/data.csv")
+
+```
+
+
+## Code names with order number prefixes 
+
+We will use a prefix naming convention for all code files. This will ensure that the code files are presented in the correct order.
+
+The prefix will be a two digit number followed by an underscore. The two digit number will be the order in which the code is to be run. For example, 01_ would be the first code file to run, 02_ would be the second, and so on.
+
+The code file name should be descriptive of the code's purpose. For example, 01_Data_Cleaning.R would be the first code file to run and it would contain code for cleaning the data.
+
+## Code comments
+
+Code comments are important for understanding the code and its purpose. Follow these guidelines for writing code comments:
+
+1. Use comments to explain the purpose of the code: Comments should explain the purpose of the code and how it works. Avoid using comments to explain what the code does, as this is already apparent from the code itself.
+
+2. Use comments to explain complex code: Use comments to explain complex code that may be difficult to understand.
+
+3. Use comments to explain code decisions: Use comments to explain why certain decisions were made in the code. For example, if a particular method was used, explain why that method was chosen over other methods.
+
+4. Use comments to explain code assumptions: Use comments to explain any assumptions made in the code. For example, if a particular method was used, explain any assumptions made about the data.
+
+5. Use comments to explain code limitations: Use comments to explain any limitations of the code. For example, if a particular method was used, explain any limitations of that method.
+
+6. Use comments to explain code errors: Use comments to explain any errors in the code. For example, if a particular method was used, explain any errors in that method.
+
+## NIEHS High Performance Computing Servers 
+
+ *ddn
+ 
+
+
+
+
+## Collaboration and Communication
+
+Collaboration and effective communication are crucial in research. Follow these guidelines to facilitate collaboration within the group:
+
+1. Use version control systems: Collaborate on projects using version control systems like Git. It allows multiple researchers to work on the same project simultaneously and tracks changes efficiently.
+
+2. Share code and documentation: Make your code and analysis scripts accessible to others. Document your work thoroughly
+
+
+
+Standard Operating Procedure for Writing R Code
+
+1. Purpose
+The purpose of this SOP is to establish a standard for writing R code in our research group. This will ensure that our code is consistent, well-documented, and reproducible.
+
+2. Scope
+This SOP applies to all members of our research group who write R code, including functions and scripts.
+
+3. Guidelines
+
+3.1. File types
+Functions are written using basic R files (.R) and scripts, or data analysis workflows, are written in RMarkdown (.Rmd). This ensures that our code is well-organized and easy to read.
+
+3.2. Documentation
+We use Roxygen2 to document our functions and scripts. This allows us to automatically generate documentation in a standardized format, making our code more accessible to others.
+
+3.3. Graph Workflow 
+We will use the diagrammeR package to create DAG-style graph visualizations of our methods code workflow. https://rich-iannone.github.io/DiagrammeR/
+
+3.4. Formatting and style
+We follow the Google style guide for R code to ensure consistency in our formatting and style. This includes guidelines for naming conventions, indentation, spacing, comments, and more.
+
+3.5. Version control
+We use Git and GitHub for version control, which allows us to track changes to our code over time and collaborate with other team members. We follow best practices for Git, such as creating descriptive commit messages and branching strategies.
+
+4. Responsibilities
+All members of our research group are responsible for following this SOP when writing R code. This includes attending training sessions, using the recommended tools and software, and regularly reviewing and updating code documentation.
+
+5. Review and revision
+This SOP will be reviewed and updated as needed to ensure that it remains relevant and effective. All members of our research group are encouraged to provide feedback and suggestions for improvement.
+
+6. References
+Google style guide for R code
+RMarkdown documentation
+Roxygen2 documentation
+Git documentation
+ROpenSci https://ropensci.org/packages/
+
+By following this SOP, we can ensure that our R code is consistent, well-documented, and reproducible, which will improve the quality and impact of our research.

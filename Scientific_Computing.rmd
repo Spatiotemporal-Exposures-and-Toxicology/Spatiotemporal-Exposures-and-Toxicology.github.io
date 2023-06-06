@@ -1,0 +1,29 @@
+---
+title: Spatiotemporal Exposures and Toxicology Group
+subtitle: Scientific Computing Support at NIEHS
+author: NIH>NIEHS>DTT>PTB>SET
+date: May 30, 2023
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    code_folding: show
+    df_print: kable
+    toc_depth: 2
+    always_allow_html: yes
+  pdf_document:
+    toc: yes=
+    toc_depth: '2'    
+---
+
+
+## Seamless Transition from Desktop to Cluster
+
+## Submitting Batch Jobs to the Cluster via SBatch
+
+## Submitting Batch Jobs to the Cluster via Rstudio
+
+## Downloading Data using wget and curl scripts
+
+
+
