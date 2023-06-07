@@ -1,0 +1,33 @@
+---
+title: Spatiotemporal Exposures and Toxicology Group
+subtitle: Style and Reproducible Research Guide
+author: Kyle P Messier
+date:  "`r Sys.Date()`"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    code_folding: show
+    df_print: kable
+    toc_depth: 2
+    always_allow_html: yes
+  pdf_document:
+    toc: yes=
+    toc_depth: '2'    
+---
+
+## {SET}$_{group}$ logo
+
+
+NIH>NIEHS>DTT>PTB>SET
+
+The Spatiotemporal Exposures and Toxicology group also known as the SET group or SET. The acronym is also a nod to the mathematical set theory, so we can use the brackets {SET}. 
+
+The following are all acceptable version of the SET name for publications and presentations:
+
+1) Spatiotemporal Exposures and Toxicology Group 
+2) {Spatiotemporal Exposures and Toxicology}
+3) SET group 
+4) {SET}$_{group}$  Note group is underscore 
+5) {SET}
+

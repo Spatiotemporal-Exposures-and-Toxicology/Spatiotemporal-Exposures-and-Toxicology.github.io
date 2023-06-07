@@ -1,0 +1,77 @@
+---
+title: \{SET\}group
+subtitle: R Style  Guide
+author: Kyle P Messier
+date:  "`r Sys.Date()`"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    code_folding: show
+    df_print: kable
+    toc_depth: 2
+    always_allow_html: yes
+  pdf_document:
+    toc: yes=
+    toc_depth: '2'    
+---
+
+
+
+Standard Operating Procedure for Writing R Code
+
+1. Purpose
+The purpose of this SOP is to establish a standard for writing R code in our research group. This will ensure that our code is consistent, well-documented, and reproducible.
+
+2. Scope
+This SOP applies to all members of our research group who write R code, including functions and scripts.
+
+3. Guidelines
+
+3.1. File types
+Functions are written using basic R files (.R) and scripts, or data analysis workflows, are written in RMarkdown (.Rmd). This ensures that our code is well-organized and easy to read.
+
+3.2. Documentation
+We use Roxygen2 to document our functions and scripts. This allows us to automatically generate documentation in a standardized format, making our code more accessible to others.
+
+3.3. Graph Workflow 
+We will use the diagrammeR package to create DAG-style graph visualizations of our methods code workflow. https://rich-iannone.github.io/DiagrammeR/
+
+3.4. Formatting and style
+We follow the Google style guide for R code to ensure consistency in our formatting and style. This includes guidelines for naming conventions, indentation, spacing, comments, and more.
+
+3.5. Version control
+We use Git and GitHub for version control, which allows us to track changes to our code over time and collaborate with other team members. We follow best practices for Git, such as creating descriptive commit messages and branching strategies.
+
+4. Responsibilities
+All members of our research group are responsible for following this SOP when writing R code. This includes attending training sessions, using the recommended tools and software, and regularly reviewing and updating code documentation.
+
+5. Review and revision
+This SOP will be reviewed and updated as needed to ensure that it remains relevant and effective. All members of our research group are encouraged to provide feedback and suggestions for improvement.
+
+6. References
+Google style guide for R code
+RMarkdown documentation
+Roxygen2 documentation
+Git documentation
+ROpenSci https://ropensci.org/packages/
+
+By following this SOP, we can ensure that our R code is consistent, well-documented, and reproducible, which will improve the quality and impact of our research.
+
+
+
+## Code comments
+
+Code comments are important for understanding the code and its purpose. Follow these guidelines for writing code comments:
+
+1. Use comments to explain the purpose of the code: Comments should explain the purpose of the code and how it works. Avoid using comments to explain what the code does, as this is already apparent from the code itself.
+
+2. Use comments to explain complex code: Use comments to explain complex code that may be difficult to understand.
+
+3. Use comments to explain code decisions: Use comments to explain why certain decisions were made in the code. For example, if a particular method was used, explain why that method was chosen over other methods.
+
+4. Use comments to explain code assumptions: Use comments to explain any assumptions made in the code. For example, if a particular method was used, explain any assumptions made about the data.
+
+5. Use comments to explain code limitations: Use comments to explain any limitations of the code. For example, if a particular method was used, explain any limitations of that method.
+
+6. Use comments to explain code errors: Use comments to explain any errors in the code. For example, if a particular method was used, explain any errors in that method.
