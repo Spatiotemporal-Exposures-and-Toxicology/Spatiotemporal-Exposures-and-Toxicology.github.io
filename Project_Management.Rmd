@@ -1,0 +1,26 @@
+---
+title: \{SET\}
+subtitle: Project Management
+author: Kyle P Messier
+date:  "`r Sys.Date()`"
+output:
+  rmdformats::readthedown:
+    self_contained: true
+    thumbnails: true
+    lightbox: true
+    gallery: false
+    highlight: tango
+    toc: 1
+  pdf_document:
+    toc: yes=
+    toc_depth: '2'    
+---
+
+
+## Github Repositories
+
+
+## Github Projects 
+
+
+

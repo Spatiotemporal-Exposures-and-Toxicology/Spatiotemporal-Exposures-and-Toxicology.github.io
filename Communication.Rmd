@@ -4,17 +4,19 @@ subtitle: Communication
 author: Kyle P Messier
 date:  "`r Sys.Date()`"
 output:
-  html_document:
-    toc: true
-    toc_float: true
-    code_folding: show
-    df_print: kable
-    toc_depth: 2
-    always_allow_html: yes
+  rmdformats::readthedown:
+    self_contained: true
+    thumbnails: true
+    lightbox: true
+    gallery: false
+    highlight: tango
+    toc: 1
   pdf_document:
     toc: yes=
     toc_depth: '2'    
 ---
+
+
 
 
 ## Collaboration and Communication

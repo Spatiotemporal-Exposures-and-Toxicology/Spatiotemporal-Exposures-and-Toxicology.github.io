@@ -4,12 +4,13 @@ author: Kyle P Messier
 date: "`r Sys.Date()`"
 link-citations: yes
 output:
-  rmdformats::downcute:
+  rmdformats::readthedown:
     self_contained: true
     thumbnails: true
     lightbox: true
     gallery: false
     highlight: tango
+    toc: 1
   pdf_document:
     toc: yes=
     toc_depth: '2'    
@@ -17,24 +18,19 @@ output:
 
 ## 
 
-## [{SET}group logo](SETlogo.html)
-
 
 ## [Reproducible Research Guide](Reproducible_Research.html)
 
 ## [R Style Guide](R-Style-guide.html)
 
 
-## [Scientific-Computing](Scientific_Computing.html)
+## [High Performance Computing](Scientific_Computing.html)
 
 
 ## [Project Management](Project_Management.html)
 
-##  [Communication](Communication.html)
 
-
-
-
+## [{SET}group logo](SETlogo.html)
 
 
  
