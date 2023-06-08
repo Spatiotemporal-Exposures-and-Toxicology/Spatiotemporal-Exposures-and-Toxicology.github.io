@@ -5,6 +5,7 @@ date: "`r Sys.Date()`"
 link-citations: yes
 output:
   rmdformats::readthedown:
+    css: "NIEHS.css"
     self_contained: true
     thumbnails: true
     lightbox: true
@@ -29,7 +30,6 @@ output:
 ## [Overleaf - $\LaTeX$](Overleaf.html)
 
 ## [Project Management](Project_Management.html)
-
 
 ## [{SET}group logo](SETlogo.html)
 
