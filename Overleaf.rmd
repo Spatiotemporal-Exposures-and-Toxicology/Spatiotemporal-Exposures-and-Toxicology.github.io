@@ -1,0 +1,29 @@
+---
+title: \{SET\}~group~ 
+subtitle: Overleaf
+author: Kyle P Messier
+date:  "`r Sys.Date()`"
+output:
+  rmdformats::readthedown:
+    self_contained: true
+    thumbnails: true
+    lightbox: true
+    gallery: false
+    highlight: tango
+    toc: 2
+  pdf_document:
+    toc: yes=
+    toc_depth: '2'    
+---
+
+
+## $\LaTeX$ Software
+
+Our group utilizes $\LaTeX$ to write our manuscripts. LaTeX is great for manuscripts that more than a few equations. It is also part of RMarkdown, so that skill is translatable. 
+
+We have an **Overleaf** professional license, which is an online, collaborative LaTeX software. Please contact Kyle to get links to our **Overleaf** account.
+
+
+
+
+

@@ -26,6 +26,7 @@ output:
 
 ## [High Performance Computing](Scientific_Computing.html)
 
+## [Overleaf - $\LaTeX$](Overleaf.html)
 
 ## [Project Management](Project_Management.html)
 
