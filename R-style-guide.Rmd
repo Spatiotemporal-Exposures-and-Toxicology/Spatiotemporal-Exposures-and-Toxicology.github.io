@@ -1,5 +1,5 @@
 ---
-title: \{SET\}group
+title: \{SET\}~group~ 
 subtitle: R Style  Guide
 author: Kyle P Messier
 date:  "`r Sys.Date()`"
@@ -29,13 +29,13 @@ This SOP applies to all members of our research group who write R code, includin
 ### Guidelines
 
 ####  File types
-Functions are written using basic R files (.R) and scripts, or data analysis workflows, are written in RMarkdown (.Rmd). This ensures that our code is well-organized and easy to read.
+Functions are written using basic R files (.R) and scripts, or data analysis workflows, are written in RMarkdown (.Rmd). See [Reproducible Research Guide](Reproducible_Research.html) for related information on file structure. RMarkdown helps ensure that our code is well-organized and easy to read.
 
 ####   Documentation
 
 Provide an introduction at the top of code to explain the purpose. Write useful comments throughout your code.
 
-If you are inlcined, use Roxygen2 to document our functions and scripts. This allows us to automatically generate documentation in a standardized format, making our code more accessible to others.
+If you are inclined to do so, use Roxygen2 to document our functions and scripts. This allows us to automatically generate documentation in a standardized format, making our code more accessible to others.
 
 ####   Graph Workflow 
 For complex code workflows, we will use the diagrammeR package to create DAG-style graph visualizations of our methods code workflow. https://rich-iannone.github.io/DiagrammeR/
