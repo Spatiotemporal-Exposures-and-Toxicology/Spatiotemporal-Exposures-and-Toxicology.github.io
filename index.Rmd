@@ -29,8 +29,7 @@ output:
 
 ## [$\color{#588b3e}{\text{{SET}group logo}}$](SETlogo.html)
 
-## [$\color{#588b3e}{\text{ddn}}$](ddn.html)
- 
+
 
 
 
