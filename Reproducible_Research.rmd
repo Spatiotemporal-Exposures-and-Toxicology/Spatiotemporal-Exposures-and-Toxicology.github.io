@@ -1,6 +1,6 @@
 ---
-title: \{SET\}group 
-subtitle: Reproducible Research Guide
+title: Reproducible Research Guide
+subtitle: \{SET\}~group~ 
 author: Kyle P Messier
 date:  "`r Sys.Date()`"
 output:
