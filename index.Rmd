@@ -10,25 +10,25 @@ output:
     thumbnails: true
     lightbox: false
     gallery: false
-    toc: 2
+    toc: 1
   pdf_document:
     toc: yes=
     toc_depth: '2'    
 ---
 
 
-## [Reproducible Research Guide](Reproducible_Research.html)
+## [$\color{#588b3e}{\text{Reproducible Research Guide}}$](Reproducible_Research.html)
 
-## [R Style Guide](R-Style-guide.html)
+## [$\color{#588b3e}{\text{R Style Guide}}$](R-Style-guide.html)
 
 
-## [High Performance Computing](Scientific_Computing.html)
+## [$\color{#588b3e}{\text{High Performance Computing}}$](Scientific_Computing.html)
 
-## [Overleaf - $\LaTeX$](Overleaf.html)
+## [$\color{#588b3e}{\text{Overleaf} - \LaTeX}$](Overleaf.html)
 
-## [Project Management](Project_Management.html)
+## [$\color{#588b3e}{\text{Project Management}}$](Project_Management.html)
 
-## [{SET}group logo](SETlogo.html)
+## [$\color{#588b3e}{\text{{SET}group logo}}$](SETlogo.html)
 
 
  
