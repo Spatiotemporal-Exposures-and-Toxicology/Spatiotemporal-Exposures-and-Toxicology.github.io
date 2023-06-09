@@ -5,12 +5,12 @@ author: Kyle P Messier
 date:  "`r Sys.Date()`"
 output:
   rmdformats::readthedown:
+    css: "NIEHS.css"
     self_contained: true
     thumbnails: true
-    lightbox: true
+    lightbox: false
     gallery: false
-    highlight: tango
-    toc: 2
+    toc: 4
   pdf_document:
     toc: yes=
     toc_depth: '2'    
@@ -84,7 +84,13 @@ data <- read.csv("Input/data.csv")
 
 We will use a prefix naming convention for all code files. This will ensure that the code files are presented in the correct order.
 
-The prefix will be a two digit number followed by an underscore. The two digit number will be the order in which the code is to be run. For example, 01_ would be the first code file to run, 02_ would be the second, and so on.
+The prefix will be a two digit number followed by an underscore. The two digit number will be the order in which the code is to be run. For example, 01_ would be the first code file to run, 02_ would be the second, and so on:
+
+
+*  **01_Calculate_Vars.R**
+*  **02_Fit_Model.R**
+*  **03_Make_Predictions.R** 
+  
 
 The code file name should be descriptive of the code's purpose. For example, 01_Data_Cleaning.R would be the first code file to run and it would contain code for cleaning the data.
 

@@ -10,13 +10,11 @@ output:
     thumbnails: true
     lightbox: false
     gallery: false
-    toc: 1
+    toc: 2
   pdf_document:
     toc: yes=
     toc_depth: '2'    
 ---
-
-## 
 
 
 ## [Reproducible Research Guide](Reproducible_Research.html)

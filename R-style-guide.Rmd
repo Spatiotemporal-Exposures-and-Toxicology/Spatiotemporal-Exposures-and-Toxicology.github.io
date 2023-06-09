@@ -5,12 +5,12 @@ author: Kyle P Messier
 date:  "`r Sys.Date()`"
 output:
   rmdformats::readthedown:
+    css: "NIEHS.css"
     self_contained: true
     thumbnails: true
-    lightbox: true
+    lightbox: false
     gallery: false
-    highlight: tango
-    toc: 4
+    toc: 1
   pdf_document:
     toc: yes=
     toc_depth: '2'    
