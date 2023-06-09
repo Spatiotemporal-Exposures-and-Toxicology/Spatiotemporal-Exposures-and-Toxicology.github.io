@@ -4,8 +4,7 @@ subtitle: Reproducible Research Guide
 author: Kyle P Messier
 date:  "`r Sys.Date()`"
 output:
-  rmdformats::readthedown:
-    css: "NIEHS.css"
+  rmdformats::downcute:
     self_contained: true
     thumbnails: true
     lightbox: false

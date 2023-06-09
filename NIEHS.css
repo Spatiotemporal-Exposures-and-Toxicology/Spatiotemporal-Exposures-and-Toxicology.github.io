@@ -10,32 +10,9 @@
 
 
 
-#sidebar {
-  background: #FFFFFF;
-}
-
-
-
-#postamble {
-  background:#588b3e;
-  border-top:solid 10px #d3d3d3;
-}
-
-.title {
-  text-align: left;
-  color: #588b3e;
-}
-
-.subtitle {
-  color: #588b3e;
-}
 
 h1, h2, h3, h4, h5, h6, legend {
   color: #588b3e;
-}
-
-#content h2 {
-    background-color: #FFFFFF;
 }
 
 

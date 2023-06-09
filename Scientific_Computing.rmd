@@ -1,16 +1,16 @@
 ---
-title: \{SET\}group 
+title: \{SET\}~group~ 
 subtitle: Scientific Computing Support at NIEHS
 author: Kyle P Messier
 date:  "`r Sys.Date()`"
 output:
-  rmdformats::readthedown:
+  rmdformats::downcute:
     self_contained: true
     thumbnails: true
     lightbox: true
     gallery: false
     highlight: tango
-    toc: 2
+    toc: 4
   pdf_document:
     toc: yes=
     toc_depth: '2'    

@@ -4,8 +4,7 @@ author: Kyle P Messier
 date: "`r Sys.Date()`"
 link-citations: yes
 output:
-  rmdformats::readthedown:
-    css: "NIEHS.css"
+  rmdformats::downcute:
     self_contained: true
     thumbnails: true
     lightbox: false
@@ -20,7 +19,6 @@ output:
 ## [$\color{#588b3e}{\text{Reproducible Research Guide}}$](Reproducible_Research.html)
 
 ## [$\color{#588b3e}{\text{R Style Guide}}$](R-Style-guide.html)
-
 
 ## [$\color{#588b3e}{\text{High Performance Computing}}$](Scientific_Computing.html)
 

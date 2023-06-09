@@ -4,13 +4,12 @@ subtitle: Project Management
 author: Kyle P Messier
 date:  "`r Sys.Date()`"
 output:
-  rmdformats::readthedown:
-    css: "NIEHS.css"
+  rmdformats::downcute:
     self_contained: true
     thumbnails: true
     lightbox: false
     gallery: false
-    toc: 1
+    toc: 3
   pdf_document:
     toc: yes=
     toc_depth: '2'    
