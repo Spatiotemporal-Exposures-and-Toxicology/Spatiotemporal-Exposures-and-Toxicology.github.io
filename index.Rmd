@@ -10,6 +10,7 @@ output:
     lightbox: false
     gallery: false
     toc: 1
+    default_style: dark
   pdf_document:
     toc: yes=
     toc_depth: '2'    

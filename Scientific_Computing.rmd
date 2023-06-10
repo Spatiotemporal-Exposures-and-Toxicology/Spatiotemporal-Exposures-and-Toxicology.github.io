@@ -11,6 +11,7 @@ output:
     gallery: false
     highlight: tango
     toc: 4
+    default_style: dark
   pdf_document:
     toc: yes=
     toc_depth: '2'    
