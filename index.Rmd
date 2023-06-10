@@ -1,5 +1,5 @@
 ---
-title: $\{SET\}_{group}$ $Junction$
+title: \{SET\}~group~ Junction
 author: Kyle P Messier
 date: "`r Sys.Date()`"
 link-citations: yes
