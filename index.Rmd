@@ -11,6 +11,7 @@ output:
     gallery: false
     toc: 1
     default_style: dark
+    css: NIEHS.css
   pdf_document:
     toc: yes=
     toc_depth: '2'    
@@ -18,17 +19,18 @@ output:
 
 
 
-## [$\color{#588b3e}{\text{Reproducible Research Guide}}$](Reproducible_Research.html)
 
-## [$\color{#588b3e}{\text{R Style Guide}}$](R-Style-guide.html)
+## [Reproducible Research](Reproducible_Research.html)
 
-## [$\color{#588b3e}{\text{High Performance Computing}}$](Scientific_Computing.html)
+## [R Style Guide](R-Style-guide.html)
 
-## [$\color{#588b3e}{\text{Overleaf} - \LaTeX}$](Overleaf.html)
+## [High Performance Computing](Scientific_Computing.html)
 
-## [$\color{#588b3e}{\text{Project Management}}$](Project_Management.html)
+## [Overleaf - $\LaTeX$](Overleaf.html)
 
-## [$\color{#588b3e}{\text{SET group logo}}$](SETlogo.html)
+## [Project Management](Project_Management.html)
+
+## [SET group logo](SETlogo.html)
 
 
 
