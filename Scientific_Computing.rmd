@@ -17,6 +17,39 @@ output:
     toc_depth: '2'    
 ---
 
+## Connecting to WINE/ddn on a Mac 
+
+
+### Folder Connection
+
+1) Connect to VPN or be on NIH network
+
+2) Go to Folder>Connect to Server 
+
+3)  Type smb://wine/... 
+
+### Terminal workaround if wine gives you troubles  
+
+1) Assume “ddnhome” is the folder we want to connect to 
+
+2) Go to https://osxfuse.github.io/ 
+
+3) On the right panel, download the latest stable releases of macFUSE and SSHFS and install them respectively. 
+
+4) Open a terminal and  type 
+
+5) $ mkdir  ~/ddnhome 
+
+6) $ sshfs  quillon.niehs.nih.gov:/ddn/gs1/home/messierkp  ~/ddnhome 
+
+7) When prompted, enter your NIH Windows domain password. There should be no output which is a good sign 
+
+8) Now let us check it out:  Go -> Home 
+
+9) Look for an icon with text “macFUSE Volume 0 (sshfs)”.  Double click it. You should be able to see the contents of your home directory. All good. 
+
+10) you can also do file access/copying using command line at the Mac terminal and your DDN home is ~/ddnhome or /Users/messierkp/ddnhome 
+
 
 ## Seamless Transition from Desktop to Cluster
 

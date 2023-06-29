@@ -7,7 +7,7 @@
 
         <meta name="author" content="Kyle P Messier" />
     
-        <meta name="date" content="2023-06-09" />
+        <meta name="date" content="2023-06-14" />
     
     <title>{SET}group</title>
 
@@ -1809,6 +1809,13 @@ margin-left: 0 !important;
         <div class="Sidebar">
           <div class="SidebarItems" id="toc">
             <ul>
+            <li><a href="#connecting-to-wineddn-on-a-mac" id="toc-connecting-to-wineddn-on-a-mac">Connecting to
+            WINE/ddn on a Mac</a>
+            <ul>
+            <li><a href="#folder-connection" id="toc-folder-connection">Folder Connection</a></li>
+            <li><a href="#terminal-workaround-if-wine-gives-you-troubles" id="toc-terminal-workaround-if-wine-gives-you-troubles">Terminal
+            workaround if wine gives you troubles</a></li>
+            </ul></li>
             <li><a href="#seamless-transition-from-desktop-to-cluster" id="toc-seamless-transition-from-desktop-to-cluster">Seamless
             Transition from Desktop to Cluster</a></li>
             <li><a href="#submitting-batch-jobs-to-the-cluster-via-sbatch" id="toc-submitting-batch-jobs-to-the-cluster-via-sbatch">Submitting
@@ -1832,7 +1839,7 @@ margin-left: 0 !important;
       <p class="authors">
            <span class="glyphicon glyphicon-user"></span> Kyle P Messier
       </p>
-         <p class="date"><span class="glyphicon glyphicon-calendar"></span> 2023-06-09</p>
+         <p class="date"><span class="glyphicon glyphicon-calendar"></span> 2023-06-14</p>
            
 
    
@@ -1840,6 +1847,39 @@ margin-left: 0 !important;
    
 <!-- Don't indent these lines or it will mess pre blocks indentation --> 
 <div class="page-content has-page-title">
+<div id="connecting-to-wineddn-on-a-mac" class="section level2">
+<h2>Connecting to WINE/ddn on a Mac</h2>
+<div id="folder-connection" class="section level3">
+<h3>Folder Connection</h3>
+<ol style="list-style-type: decimal">
+<li><p>Connect to VPN or be on NIH network</p></li>
+<li><p>Go to Folder&gt;Connect to Server</p></li>
+<li><p>Type <a href="smb://wine/" class="uri">smb://wine/</a>…</p></li>
+</ol>
+</div>
+<div id="terminal-workaround-if-wine-gives-you-troubles" class="section level3">
+<h3>Terminal workaround if wine gives you troubles</h3>
+<ol style="list-style-type: decimal">
+<li><p>Assume “ddnhome” is the folder we want to connect to</p></li>
+<li><p>Go to <a href="https://osxfuse.github.io/" class="uri">https://osxfuse.github.io/</a></p></li>
+<li><p>On the right panel, download the latest stable releases of
+macFUSE and SSHFS and install them respectively.</p></li>
+<li><p>Open a terminal and type</p></li>
+<li><p>$ mkdir ~/ddnhome</p></li>
+<li><p>$ sshfs quillon.niehs.nih.gov:/ddn/gs1/home/messierkp
+~/ddnhome</p></li>
+<li><p>When prompted, enter your NIH Windows domain password. There
+should be no output which is a good sign</p></li>
+<li><p>Now let us check it out: Go -&gt; Home</p></li>
+<li><p>Look for an icon with text “macFUSE Volume 0 (sshfs)”. Double
+click it. You should be able to see the contents of your home directory.
+All good.</p></li>
+<li><p>you can also do file access/copying using command line at the Mac
+terminal and your DDN home is ~/ddnhome or
+/Users/messierkp/ddnhome</p></li>
+</ol>
+</div>
+</div>
 <div id="seamless-transition-from-desktop-to-cluster" class="section level2">
 <h2>Seamless Transition from Desktop to Cluster</h2>
 </div>
