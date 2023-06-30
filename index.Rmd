@@ -22,8 +22,6 @@ output:
 
 ## [Reproducible Research](Reproducible_Research.html)
 
-## [R Style Guide](R-Style-guide.html)
-
 ## [High Performance Computing](Scientific_Computing.html)
 
 ## [Overleaf - $\LaTeX$](Overleaf.html)

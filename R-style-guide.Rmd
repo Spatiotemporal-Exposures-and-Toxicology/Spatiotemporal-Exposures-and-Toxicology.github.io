@@ -1,16 +1,16 @@
 ---
-title: \{SET\}~group~ 
-subtitle: R Style  Guide
+title: R Style Guide
+subtitle: \{SET\}~group~ 
 author: Kyle P Messier
 date:  "`r Sys.Date()`"
 output:
   rmdformats::downcute:
-    css: "NIEHS.css"
     self_contained: true
     thumbnails: true
     lightbox: false
     gallery: false
-    toc: 1
+    toc: 4
+    default_style: dark
   pdf_document:
     toc: yes=
     toc_depth: '2'    
@@ -18,13 +18,10 @@ output:
 
 
 
-## Standard Operating Procedure for Writing R Code
+## Standard Operating Procedure (SOP) for Writing R Code
 
 ###  Purpose
 The purpose of this SOP is to establish a standard for writing R code in our research group. This will ensure that our code is consistent, well-documented, and reproducible.
-
-### Scope
-This SOP applies to all members of our research group who write R code, including functions and scripts.
 
 ### Guidelines
 

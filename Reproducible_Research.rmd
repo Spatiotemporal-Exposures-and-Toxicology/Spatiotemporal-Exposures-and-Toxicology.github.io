@@ -96,3 +96,45 @@ The code file name should be descriptive of the code's purpose. For example, 01_
 
 
 
+##  R Code Style Guide
+
+###  Purpose
+The purpose of the style guide is to establish a standard for writing R code in our research group. This will ensure that our code is consistent, well-documented, and reproducible.
+
+
+###  File types
+Functions are written using basic R files (.R) and scripts, or data analysis workflows, are written in RMarkdown (.Rmd). RMarkdown helps ensure that our code is well-organized and easy to read.
+
+###   Documentation
+
+Provide an introduction at the top of code to explain the purpose. Write useful comments throughout your code.
+
+If you are inclined to do so, use Roxygen2 to document our functions and scripts. This allows us to automatically generate documentation in a standardized format, making our code more accessible to others.
+
+###   Graph Workflow 
+For complex code workflows, we will use the [diagrammeR](https://rich-iannone.github.io/DiagrammeR/) package to create DAG-style graph visualizations of our methods code workflow. 
+
+###   Formatting and style
+We follow the [tidyverse](https://style.tidyverse.org/index.html) style guide for R code to ensure consistency in our formatting and style. This includes guidelines for naming conventions, indentation, spacing, comments, and more.
+
+###  Version control
+We use Git and GitHub for version control, which allows us to track changes to our code over time and collaborate with other team members. We follow best practices for Git, such as creating descriptive commit messages and branching strategies. See [Project Management](Project_Management.html) for detailed information on our Github repositories and Github Projects.
+
+
+###   Responsibilities
+All members of our research group are responsible for following this SOP when writing R code. This includes attending training sessions, using the recommended tools and software, and regularly reviewing and updating code documentation.
+
+####  Review and revision
+This SOP will be reviewed and updated as needed to ensure that it remains relevant and effective. All members of our research group are encouraged to provide feedback and suggestions for improvement.
+
+
+
+## Code comments
+
+Code comments are important for understanding the code and its purpose. Follow these guidelines for writing code comments:
+
+1. Comments should explain the purpose of the code and how it works. Avoid using comments to explain what the code does, as this is already apparent from the code itself.
+
+2. Use comments to explain complex code that may be difficult to understand.
+
+
